@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_ad_display"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+    <!--UI Container-->
+        <LinearLayout
+
+            android:background="@mipmap/background"
+            android:orientation="vertical"
+            android:id="@+id/UI_Container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+<FrameLayout
+    android:layout_marginTop="110dp"
+    android:layout_alignParentTop="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+ <LinearLayout
+     android:background="@drawable/native_image"
+     android:src="@drawable/native_image"
+     android:layout_width="80dp"
+     android:layout_height="80dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/nativeAdLayout"
+        android:background="@drawable/native_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+</LinearLayout>
+</FrameLayout>
+
+</RelativeLayout>

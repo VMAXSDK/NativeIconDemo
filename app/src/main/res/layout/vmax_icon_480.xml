@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="320dp"
+        android:layout_height="480dp"
+        android:layout_gravity="center"
+        android:src="@drawable/vmax_icon_320_480" />
+
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="480dp"
+        android:layout_gravity="center"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:gravity="top|left"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/vmax_close_iconAd"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="top|left"
+                    android:layout_marginRight="260dp"
+                    android:src="@drawable/vmax_icon_close"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/vmax_adChoiceLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|right"
+                    android:gravity="top|right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/vmax_sponsored"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="1dp"
+                        android:background="@drawable/vmax_nativebg_ad"
+                        android:gravity="center"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:text="@string/vmax_advertisment_text"
+                        android:textColor="@color/vmax_black"
+                        android:textSize="8sp" />
+
+                    <ImageView
+                        android:id="@+id/vmax_adchoice"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center"
+                        android:paddingLeft="1dp"
+                        android:paddingRight="1dp"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/vmax_adchoice_action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:src="@drawable/vmax_adchoices"
+                    android:visibility="gone"/>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="1dp"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/vmax_icon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="left" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:gravity="top|center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/vmax_title"
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:paddingLeft="8px"
+                        android:paddingRight="8px"
+                        android:paddingTop="11px"
+                        android:textColor="@color/vmax_black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/vmax_image"
+                android:layout_width="320dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/fb_media_view"
+                android:layout_width="320dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginBottom="45dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:gravity="center"
+                android:visibility="gone">
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/vmax_desc"
+                android:layout_width="320dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:lines="4"
+                android:ellipsize="end"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/vmax_black"
+                android:textSize="15sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/vmax_cta"
+                style="@style/style_vmax_button_480"
+                android:layout_width="320dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Install Now" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
