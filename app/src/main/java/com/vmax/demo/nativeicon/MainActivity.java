@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
@@ -35,15 +36,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-      loadNativeTile();
+        loadNativeIcon();
 
 
     }
 
 
-    /** Method for Loading Native Tile */
+    /** Method for Loading Native Icon */
 
-    public void loadNativeTile()
+    public void loadNativeIcon()
     {
         /** Initializing vmaxAdView with an Adspot, Repalce With the adspot Configured by you */
         vmaxAdView = new VmaxAdView(this, "V99109044", VmaxAdView.UX_NATIVE);
@@ -74,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
                         nativeAdLayout.removeAllViews();
                         nativeAdLayout.setVisibility(View.VISIBLE);
                         nativeAdLayout.addView(viewGroup);
+
                     }
 
                     @Override
