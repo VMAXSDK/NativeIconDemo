@@ -10,37 +10,42 @@
 
 
     <!--UI Container-->
-        <LinearLayout
-
-            android:background="@mipmap/background"
-            android:orientation="vertical"
-            android:id="@+id/UI_Container"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
-
-
-<FrameLayout
-    android:layout_marginTop="110dp"
-    android:layout_alignParentTop="true"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-<LinearLayout
-    android:gravity="center"
-    android:orientation="horizontal"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
- <LinearLayout
-     android:background="@drawable/native_image"
-     android:src="@drawable/native_image"
-     android:layout_width="80dp"
-     android:layout_height="80dp" />
     <LinearLayout
-        android:orientation="horizontal"
-        android:id="@+id/nativeAdLayout"
-        android:background="@drawable/native_image"
-        android:layout_width="80dp"
-        android:layout_height="80dp" />
-</LinearLayout>
-</FrameLayout>
+
+        android:background="@mipmap/background"
+        android:orientation="vertical"
+        android:id="@+id/UI_Container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <FrameLayout
+        android:layout_marginTop="110dp"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:background="@drawable/native_image"
+                android:src="@drawable/native_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+            <com.vmax.android.ads.api.VmaxAdView
+                xmlns:vmax="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/xml_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                vmax:adspotKey="V99109044"
+                vmax:uxType="@integer/vmax_ux_icon"
+                />
+        </LinearLayout>
+    </FrameLayout>
 
 </RelativeLayout>
