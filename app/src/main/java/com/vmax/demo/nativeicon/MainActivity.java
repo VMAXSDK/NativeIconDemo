@@ -5,7 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.vmax.android.ads.api.VmaxAdView;
-
+import com.vmax.android.ads.common.VmaxAdListener;
+import com.vmax.android.ads.exception.VmaxAdError;
 
 
 /** Its Recommended To Use VMAX plugin For Android Studio To Add Your Dependencies
@@ -28,6 +29,62 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         vmaxAdView =(VmaxAdView) findViewById(R.id.xml_container);
+        vmaxAdView.setAdListener(new VmaxAdListener() {
+            @Override
+            public void onAdReady(VmaxAdView vmaxAdView) {
+
+            }
+
+            @Override
+            public void onAdError(VmaxAdError vmaxAdError) {
+
+            }
+
+            @Override
+            public void onAdClose() {
+
+            }
+
+            @Override
+            public void onAdMediaEnd(boolean b, long l) {
+
+            }
+
+            @Override
+            public void onAdClick() {
+                super.onAdClick();
+            }
+
+            @Override
+            public void onAdMediaStart() {
+                super.onAdMediaStart();
+            }
+
+            @Override
+            public void onAdView(int i) {
+                super.onAdView(i);
+            }
+
+            @Override
+            public void onAdMediaCollapse() {
+                super.onAdMediaCollapse();
+            }
+
+            @Override
+            public void onAdMediaExpand() {
+                super.onAdMediaExpand();
+            }
+
+            @Override
+            public void onAdSkippable() {
+                super.onAdSkippable();
+            }
+
+            @Override
+            public void onAdRefresh() {
+                super.onAdRefresh();
+            }
+        });
 
 
 
